@@ -34,12 +34,12 @@ label start:
         scene bk_t_bedroom
         p "Waking up to the sound of the TV playing isn't an everyday occurence."
         p "But, as weird as it was. If not for the TV, I wouldn't have known about, THAT."
+        play sound "audio/newsbroadcast.mp3"
         tv "BREAKING NEWS: The city council is holding a vote for the construction of the (river name) Dam. For the first time in years, us the people will have a choice on the matter."
         p "Oh."
         p "That river."
         scene bk_river
-        #play music "audio/(name).mp3" fadein 1.0 volume 0.5
-        #add nature/river noises here
+        play music "audio/naturemusic.mp3" fadein 1.0 volume 0.5
         p "I spent a lot of time there with everyone."
         p "Most of it was me just... Trying to get away from life by canoeing or hanging out with my friends."
         p "But now that life's gotten more and more busy, I haven't really had the time to head back there."
@@ -47,7 +47,7 @@ label start:
         p "But... If that dam were to be built...."
         scene bk_river_rev
         p "The river from my memories would cease to exist."
-        #stop music fadeout 1.0
+        stop music fadeout 1.0
         scene bk_t_bedroom
         play sound "audio/phone_buzz.mp3"
         "Phone" "*bzt* *bzt*"
